@@ -27,7 +27,7 @@ export default class Refs extends React.Component {
         return (
             <div>
                 <input ref='inputBox' value={this.state.input} onChange={this.handler} />
-                <button onclick={this.submit}>Submit</button>
+                <button onClick={this.submit}>Submit</button>
             </div>
         )
     }

@@ -13,3 +13,7 @@
 `npm run build`
 
 `echo '{"presets": ["es2015"] }' > .babelrc`
+
+
+### Routing
+`npm install --save-dev react-router`

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import PropTypes from 'prop-types';
 export default class MyPropsTypeComponent extends React.Component {
     render() {
         return (
@@ -11,8 +11,8 @@ export default class MyPropsTypeComponent extends React.Component {
     }
 }
 MyPropsTypeComponent.propTypes = {
-    name: React.PropTypes.string,
-    count: React.PropTypes.number.isRequired
+    name: PropTypes.string,
+    count: PropTypes.number.isRequired
 }
 
 MyPropsTypeComponent.defaultProps = {

@@ -61,11 +61,11 @@ export default class App extends React.Component {
     }
 
     render() {
-        let profile1 = this.state.profiles[0]
-        let profile2 = this.state.profiles[1]
+        // let profile1 = this.state.profiles[0]
+        // let profile2 = this.state.profiles[1]
         let profiles = this.state.profiles.map ( profile => {
             return (
-                <Profile name={profile.name} age={profile.age} bio={profile.bio} hobbies={profile.hobbies}/>
+                <Profile key={profile.id} name={profile.name} age={profile.age} bio={profile.bio} hobbies={profile.hobbies} />
             )
         })
 
